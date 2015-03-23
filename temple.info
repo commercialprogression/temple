@@ -1,61 +1,30 @@
 name = Temple
-description = Philosophically-clean theme
+description = Philosophically-clean admin theme
 core = 7.x
 
 regions[header] = Header
-regions[pre_content] = Hero
-regions[sidebar_first] = Sidebar
-regions[content_top] = Content Top
 regions[content] = Content
-regions[content_bottom] = Content Bottom
-regions[post_content] = Postcontent
-regions[pre_footer] = Pre-footer
-regions[footer] = Footer
-regions[copyright] = Copyright
 
 ; Hidden but required
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 
 scripts[] = js/behaviors.js
+scripts[] = js/jquery.tipsy.js
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/vertical-tabs.css
 
 ; overrides
-stylesheets[all][] = admin.css
-stylesheets[all][] = aggregator.css
-stylesheets[all][] = block.css
-stylesheets[all][] = book.css
-stylesheets[all][] = comment.css
 stylesheets[all][] = contextual.css
 stylesheets[all][] = ctools.css
-stylesheets[all][] = date.css
-stylesheets[all][] = datepicker.1.7.css
 stylesheets[all][] = dblog.css
+; stylesheets[all][] = features.css
 stylesheets[all][] = field.css
-stylesheets[all][] = file.css
-stylesheets[all][] = filter.css
-stylesheets[all][] = forum.css
-stylesheets[all][] = help.css
-stylesheets[all][] = maintenance.css
-stylesheets[all][] = menu.css
 stylesheets[all][] = node.css
-stylesheets[all][] = openid.css
-stylesheets[all][] = poll.css
-stylesheets[all][] = profile.css
 stylesheets[all][] = search.css
-stylesheets[all][] = statistics.css
-stylesheets[all][] = syslog.css
 stylesheets[all][] = system.admin.css
-stylesheets[all][] = system.base.css
-stylesheets[all][] = system.css
-stylesheets[all][] = system.maintenance.css
+; stylesheets[all][] = system.base.css
 stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
-stylesheets[all][] = taxonomy.css
-stylesheets[all][] = tracker.css
-stylesheets[all][] = update.css
 stylesheets[all][] = user.css
-stylesheets[all][] = vertical-tabs.css
-stylesheets[all][] = views.css
-stylesheets[all][] = views_slideshow.css
