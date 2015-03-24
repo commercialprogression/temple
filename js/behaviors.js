@@ -10,7 +10,7 @@ $(document).ready(function(){
   // Activate fancy tooltips on non-touch screens.
   if (!('ontouchstart' in window) && !('onmsgesturechange' in window)) {
     $('[title]').tipsy({
-      delayIn: 500, 
+      delayIn: 350, 
       delayOut: 200
     });
   }

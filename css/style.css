@@ -65,12 +65,15 @@ body {
 }
 
 /*-Link-*/
+a {
+  transition: .3s ease-out;
+}
 a:link {
   color: #37b;
   text-decoration: none;
 }
 a:visited, a.visited {
-  color: #575294;
+  color: #559;
 }
 a:hover, a.hover {
   color: #f70;
@@ -227,13 +230,13 @@ input, select, textarea {
     input[type=file]::-webkit-file-upload-button:hover,
     input[type="reset"]:hover,
     input[type="submit"]:hover {
-      background: #024;
+      background: #f70;
     }
     input[type="button"]:active,
     input[type=file]::-webkit-file-upload-button:active,
     input[type="reset"]:active,
     input[type="submit"]:active {
-      color: #024;
+      color: #f70;
     }
     input[type="button"]:focus,
     input[type=file]::-webkit-file-upload-button:focus,
@@ -345,22 +348,19 @@ ul.action-links {
   padding: 0;
 }
   .action-links > li {}
-  .action-links > li > a {
-    background: #222;
-    color: #fff;
-    display: inline-block;
-    margin: .2em .5em .2em 0;
-    padding: .2em .4em;
-  }
-    .action-links > li > a:hover {
-      background: #888;
+    .action-links > li > a {
+      background: #37b;
+      color: #fff;
+      display: inline-block;
+      margin: .2em .5em .2em 0;
+      padding: .2em .4em;
     }
-body.admin-menu {
-  margin-top: 30px !important;
+      .action-links > li > a:hover {
+        background: #f70;
+      }
+#admin-menu a {
+  font-style: normal;
 }
-  #admin-menu a {
-    font-style: normal;
-  }
 .breadcrumb {
   color: #ccc;
   font-size: .75em;
@@ -379,40 +379,6 @@ body.admin-menu {
     display: inline-block;
     margin: 0 5px;
   }
-.contextual-links-region {
-  position: relative;
-}
-  .contextual-links-region:hover {}
-  .contextual-links-trigger {
-    display: none;
-  }
-  ul.contextual-links {
-    background: #444;
-    background: rgba(0,0,0,.5);
-    box-sizing: border-box;
-    color: #fff;
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 5px 0 5px 20px;
-    position: absolute;
-    right: -10em;
-    text-align: left !important;
-    top: -10px;
-    width: 10em;
-  }
-    .contextual-links-region:hover ul.contextual-links {
-      display: block;
-    }
-    .contextual-links a {
-      color: #fff !important;
-      font-size: 12px !important;
-      font-style: normal !important;
-      font-weight: normal !important;
-    }
-      .contextual-links a:hover {
-        color: orange !important;
-      }
 .description, .status-description {
   font-size: .75em;
   margin: .1em 0 0;
@@ -425,9 +391,6 @@ body.admin-menu {
   }
 .field {}
   .field-label {}
-.field-type-image {
-  margin-bottom: 1.5em;
-}
 .filter-wrapper {
   font-size: .75em;
   padding: .05em .1em;
@@ -541,18 +504,14 @@ div.pager {
     margin: 0 .2em 0 0;
   }
     .pager li > a, .pager li > span {
-      -moz-transition: background-color .1s ease-out;
-      -webkit-transition: background-color .1s ease-out;
       border: 1px solid #ccc;
       display: inline-block;
       padding: .3em .5em;
       text-decoration: none;
-      transition: background-color .1s ease-out;
     }
       .pager li > a:hover {
-        background-color: #72b4ff;
+        background-color: #f70;
         color: #fff;
-        text-shadow: 1px 1px 3px rgba(0,63,114,.5);
       }
   .pager-current > span {
     background-color: #ccc;
@@ -569,48 +528,39 @@ div.pager {
   margin: 0;
   padding: 0 0 0 1em;
 }
+  #tabs {
+    margin-bottom: -1px;
+  }
   .tabs.primary {}
+  .tabs.secondary {
+    background: #fff;
+    font-size: .75em;
+    padding: .3em 1em 0;
+  }
   .tabs > li {
     display: inline-block;
     margin: 0 1em 0 0;
   }
     .tabs > li > a {
-      -moz-transition: background-color .3s ease-out;
-      -webkit-transition: background-color .3s ease-out;
       background: #ccc;
-      color: #00274c;
+      color: #37b;
       display: inline-block;
       padding: .5em 1em;
-      transition: background-color .3s ease-out;
     }
+      .secondary > li > a {
+        border: 1px solid #ddd;
+      }
       .tabs > li > a:hover {
-        background: #72b4ff;
+        background: #eee;
+        border-top: 3px solid #f70;
       }
       .tabs > li > a.active {
         background: #fff;
         border-top: 3px solid;
-        outline: 1px solid #fff;
       }
-  @media all and (max-width: 550px) {
-    .tabs {
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: .8em;
-      padding: 0;
-    }
-      .tabs > li {
-        border-radius: 0;
-        border-width: 0 0 1px 0;
-        float: none;
-        margin: 0;
-      }
-        .tabs > li:last-child {
-          border-width: 0;
+        .secondary > li > a.active {
+          border: 1px solid;
         }
-        .tabs > li > a {
-          display: block;
-        }
-  }
 .theme-selector {}
   .theme-selector .screenshot {
     float: left;

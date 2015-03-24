@@ -15,7 +15,7 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/vertical-tabs.css
 
 ; overrides
-stylesheets[all][] = contextual.css
+; stylesheets[all][] = contextual.css
 stylesheets[all][] = ctools.css
 stylesheets[all][] = dblog.css
 ; stylesheets[all][] = features.css
